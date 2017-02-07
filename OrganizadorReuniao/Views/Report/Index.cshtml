@@ -28,6 +28,8 @@
     int octM = 0;
     int novM = 0;
     int decM = 0;
+
+    int currentYear = DateTime.Now.Year;
 }
 
 <div class="page-header">
@@ -232,18 +234,18 @@
                 <tr class="success">
                     <td style="font-weight: bold;">Média</td>
                     <td></td>
-                    <td>@((janM > 0) ? (Math.Round((decimal)janM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(1, 2015), 0)).ToString() : "")</td>
-                    <td>@((febM > 0) ? (Math.Round((decimal)febM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(2, 2015), 0)).ToString() : "")</td>
-                    <td>@((marM > 0) ? (Math.Round((decimal)marM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(3, 2015), 0)).ToString() : "")</td>
-                    <td>@((aprM > 0) ? (Math.Round((decimal)aprM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(4, 2015), 0)).ToString() : "")</td>
-                    <td>@((mayM > 0) ? (Math.Round((decimal)mayM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(5, 2015), 0)).ToString() : "")</td>
-                    <td>@((junM > 0) ? (Math.Round((decimal)junM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(6, 2015), 0)).ToString() : "")</td>
-                    <td>@((julM > 0) ? (Math.Round((decimal)julM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(7, 2015), 0)).ToString() : "")</td>
-                    <td>@((augM > 0) ? (Math.Round((decimal)augM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(8, 2015), 0)).ToString() : "")</td>
-                    <td>@((sepM > 0) ? (Math.Round((decimal)sepM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(9, 2015), 0)).ToString() : "")</td>
-                    <td>@((octM > 0) ? (Math.Round((decimal)octM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(10, 2015), 0)).ToString() : "")</td>
-                    <td>@((novM > 0) ? (Math.Round((decimal)novM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(11, 2015), 0)).ToString() : "")</td>
-                    <td>@((decM > 0) ? (Math.Round((decimal)decM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(12, 2015), 0)).ToString() : "")</td>
+                    <td>@((janM > 0) ? (Math.Round((decimal)janM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(1, currentYear), 0)).ToString() : "")</td>
+                    <td>@((febM > 0) ? (Math.Round((decimal)febM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(2, currentYear), 0)).ToString() : "")</td>
+                    <td>@((marM > 0) ? (Math.Round((decimal)marM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(3, currentYear), 0)).ToString() : "")</td>
+                    <td>@((aprM > 0) ? (Math.Round((decimal)aprM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(4, currentYear), 0)).ToString() : "")</td>
+                    <td>@((mayM > 0) ? (Math.Round((decimal)mayM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(5, currentYear), 0)).ToString() : "")</td>
+                    <td>@((junM > 0) ? (Math.Round((decimal)junM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(6, currentYear), 0)).ToString() : "")</td>
+                    <td>@((julM > 0) ? (Math.Round((decimal)julM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(7, currentYear), 0)).ToString() : "")</td>
+                    <td>@((augM > 0) ? (Math.Round((decimal)augM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(8, currentYear), 0)).ToString() : "")</td>
+                    <td>@((sepM > 0) ? (Math.Round((decimal)sepM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(9, currentYear), 0)).ToString() : "")</td>
+                    <td>@((octM > 0) ? (Math.Round((decimal)octM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(10, currentYear), 0)).ToString() : "")</td>
+                    <td>@((novM > 0) ? (Math.Round((decimal)novM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(11, currentYear), 0)).ToString() : "")</td>
+                    <td>@((decM > 0) ? (Math.Round((decimal)decM / (decimal)new OrganizadorReuniao.Helper.Common().sundaysPerMonth(12, currentYear), 0)).ToString() : "")</td>
                 </tr>
             </tbody>
         }
